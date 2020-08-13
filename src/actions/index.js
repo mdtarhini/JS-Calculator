@@ -31,3 +31,9 @@ export const changeTheme = (theme) => {
     payload: theme,
   };
 };
+
+export const fetchURL = () => {
+  return {
+    type: "FETCH_URL",
+  };
+};

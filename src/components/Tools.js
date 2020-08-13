@@ -28,6 +28,19 @@ const Tools = (props) => {
             <a
               href="#"
               className={`btn ${
+                props.selectedButton == "settings"
+                  ? "btn-primary"
+                  : "btn-secondary"
+              }`}
+              onClick={() => props.navigate("settings")}
+            >
+              <i class="fas fa-palette"></i>
+            </a>
+          </li>
+          <li className="nav-item mr-3">
+            <a
+              href="#"
+              className={`btn ${
                 props.selectedButton == "history"
                   ? "btn-primary"
                   : "btn-secondary"
@@ -41,30 +54,17 @@ const Tools = (props) => {
             <a
               href="#"
               className={`btn ${
-                props.selectedButton == "settings"
-                  ? "btn-primary"
-                  : "btn-secondary"
-              }`}
-              onClick={() => props.navigate("settings")}
-            >
-              <i class="fas fa-palette"></i>
-            </a>
-          </li>
-          {/* <li className="nav-item mr-3">
-            <a
-              href="#"
-              className={`btn ${
                 props.selectedButton == "code" ? "btn-primary" : "btn-secondary"
               }`}
               onClick={() => props.navigate("code")}
             >
               <i class="fas fa-code"></i>
             </a>
-          </li> */}
+          </li>
         </ul>
       </div>
 
-      <div className={`${renderedBody() ? "card-body" : ""}`}>
+      <div className={`${renderedBody() ? "card-body p-auto" : ""}`}>
         {renderedBody()}
       </div>
     </div>

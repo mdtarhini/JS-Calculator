@@ -5,6 +5,7 @@ import buttonsReducer from "./buttonsReducer";
 import equationReducer from "./equationReducer";
 import navigationReducer from "./navigationReducer";
 import themeReducer from "./themeReducer";
+import urlReducer from "./urlReducer";
 // ------------------------------------------------------------------------------//
 export default combineReducers({
   equationReducer: equationReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   buttonsReducer: buttonsReducer,
   navigationReducer: navigationReducer,
   themeReducer: themeReducer,
+  urlReducer: urlReducer,
 });
 // ------------------------------------------------------------------------------//
