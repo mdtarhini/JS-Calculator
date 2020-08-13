@@ -1,0 +1,10 @@
+.screen-text {
+    font-size: 5vh;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+#display {
+    background-color: rgb(10, 11, 33);
+    height: 12vh;
+}
